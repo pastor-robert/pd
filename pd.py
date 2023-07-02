@@ -1,7 +1,10 @@
 """
 pd.py foo.pdf > foo.txt
-    Extract text from 365DayBibleReadingPlan PDF file and print it to stdout.
+    Extract text from 365DayBibleReadingPlan PDF file and print it
+    to stdout.  Note that this script produces extraneous text. The
+    output must be manually edited to remove the extraneous text.
 """
+
 from pypdf import PdfReader, PageObject
 import sys
 import argparse
